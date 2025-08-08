@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        form{
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            width: 500px;
+            height: 300px;
+            align-items: center;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .inp{
+            display: flex;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 20px;
+            align-items: center;
+            width: 60%;
+            margin: 5px;
+        }
+
+        .inp input{
+            border:0;
+            border-radius: 20px;
+            height: 100%;
+            width: 100%;
+
+        }
+
+        .inp input:focus{
+            border: 0;
+            outline: none;
+        }
+        
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+
+        .banner{
+            box-shadow: 10px 10px 50px orange;
+            position: absolute;
+            top:-27px;
+            border: 2px solid black;
+            padding: 10px;
+            height: 30px;
+            width: 200px;
+            text-align: center;
+            background-color: orange;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+   .
+    <form >
+         <div class="banner">
+            LOGIN CARD
+          </div>
+
+          
+        <div class="inp">
+            <label for="user">
+                <i class="fa-regular fa-circle-user"></i>
+            </label>
+            <input type="text" placeholder="USERNAME" id="user">
+        </div>
+
+
+        <div class="inp">
+            <label for="pass">
+                <i class="fa-solid fa-lock"></i>
+            </label>
+            <input type="password" placeholder="PASSWORD" id="pass">
+        </div>
+
+
+        <button>LOGIN</button>
+    </form>
+</body>
+</html>
