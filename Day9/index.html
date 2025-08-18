@@ -22,6 +22,11 @@
         .mini img{
             height: 80px;
             width: 140px;
+            opacity: 0.5;
+        }
+
+        .mini .active{
+            opacity: 1;
         }
 
         .mini{
@@ -58,11 +63,11 @@
         </div>
 
         <div class="mini">
-            <img onclick="change(0)" src="./assets/Spiderman.png" alt="Loading">
-            <img  src="./assets/1917.jpg" alt="Loading">
-            <img  src="./assets/darkKnight.jpg" alt="Loading">
-            <img  src="./assets/startwars.jpg" alt="Loading">
-            <img  src="./assets/toby.jpg" alt="Loading">
+            <img class="img active" onclick="change(0)" src="./assets/Spiderman.png" alt="Loading">
+            <img class="img" src="./assets/1917.jpg" alt="Loading">
+            <img class="img"  src="./assets/darkKnight.jpg" alt="Loading">
+            <img class="img"  src="./assets/startwars.jpg" alt="Loading">
+            <img class="img"  src="./assets/toby.jpg" alt="Loading">
         </div>
        
     </div>

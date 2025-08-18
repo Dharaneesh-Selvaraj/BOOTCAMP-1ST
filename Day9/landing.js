@@ -6,13 +6,20 @@ const arr=["./assets/Spiderman.png",
 "./assets/toby.jpg"
 ]
 
+
+const img = document.getElementsByClassName('img');
+console.log(img);
+
 let i=0;
 let next=()=>{
+     img[i].classList.remove('active');
     i++;
-    if(i==arr.length)
-    {
-        i=0;
-    }
+
+        if(i==arr.length)
+        {
+            i=0;
+        }
+    img[i].classList.add('active');
     
 
     con.style.backgroundImage=`url('${arr[i]}')`;
@@ -32,7 +39,10 @@ let change=(a)=>{
 }
 
 
-setInterval(()=>{
-  next();
-},2000)
+
+
+
+// setInterval(()=>{
+//   next();
+// },2000)
 
