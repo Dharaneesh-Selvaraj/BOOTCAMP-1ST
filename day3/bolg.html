@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY BLOG</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 
     <style>
@@ -24,6 +25,14 @@
         }
 
 
+         .content >p{
+            background-color: rgb(228, 204, 163);
+        }
+
+        
+       
+
+
 
         
 
@@ -34,11 +43,13 @@
             
         }
 
+        .header ul{
+            display: none;
+        }
+
         
 
-        .content >p{
-            background-color: rgb(228, 204, 163);
-        }
+       
 
         header{
             position: fixed;
@@ -46,15 +57,7 @@
             top: 0;
         }
 
-        .header ul{
-            background-color: blanchedalmond;
-            display: flex;
-            justify-content: space-around;
-            text-decoration: none;
-            list-style-type: none;
-            padding: 20px;
-            font-size: x-large;
-        }
+        
 
         header ul li>a{
             text-decoration: none;
@@ -85,6 +88,26 @@
         #main{
             margin-top:100px ;
         }
+
+
+         @media screen and (min-width:768px){
+
+           
+            .header ul{
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            list-style-type: none;
+            padding: 20px;
+            font-size: x-large;
+        }
+
+        .icon{
+            display: none;
+        }
+        
+        }
     </style>
 
 
@@ -96,7 +119,11 @@
 <body>
    
      <header class="header">
-        <nav class="nav">
+        <div class="icon">
+
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <nav class="nav" >
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">HOME</a></li>
